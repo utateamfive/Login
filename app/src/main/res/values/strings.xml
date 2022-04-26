@@ -22,5 +22,16 @@
     <string name="univerisity_bazaar">Univerisity Bazaar</string>
     <string name="login">Login</string>
     <string name="user_id">User Id</string>
+    <string name="payment">Payment</string>
+    <string name="sales">Sales</string>
+    <string name="exchange">Exchange</string>
+    <string name="clubs">Clubs</string>
+    <string name="paymenticon">paymentIcon</string>
+    <string name="searchicon">searchIcon</string>
+    <string name="clubsicon">clubsIcon</string>
+    <string name="salesicon">salesIcon</string>
+    <string name="communication">Communication</string>
+    <string name="commicon">commIcon</string>
+    <string name="exchangeicon">exchangeIcon</string>
 
 </resources>

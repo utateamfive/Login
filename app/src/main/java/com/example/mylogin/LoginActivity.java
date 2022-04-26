@@ -36,6 +36,12 @@ public class LoginActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    //Called when user successfully logs in
+    public void goToHome(){
+        Intent intent = new Intent(this, home.class);
+        startActivity(intent);
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -114,7 +120,7 @@ public class LoginActivity extends AppCompatActivity {
                         public void onComplete(@NonNull Task<AuthResult> task) {
 
                             if(task.isSuccessful()){
-                                // Todo: go to home screen
+                                goToHome();
                                 progressBar.setVisibility(View.INVISIBLE);
                                 Toast.makeText(LoginActivity.this, "Login Successful", Toast.LENGTH_LONG).show();
                             }
@@ -136,7 +142,7 @@ public class LoginActivity extends AppCompatActivity {
                                     public void onComplete(@NonNull Task<AuthResult> task) {
 
                                         if(task.isSuccessful()){
-                                            // Todo: go to home screen
+                                            goToHome();
                                             progressBar.setVisibility(View.INVISIBLE);
                                             Toast.makeText(LoginActivity.this, "Login Successful", Toast.LENGTH_LONG).show();
                                         }

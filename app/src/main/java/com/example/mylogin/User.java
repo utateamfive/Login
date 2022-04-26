@@ -8,6 +8,7 @@ public class User {
     private String UserPhone;
     private String UserID;
     private String UserPass;
+    private Boolean isLoggedIn = false;
     public User(){}
 
     public User(String userName, String userEmail, String userPhone, String userID, String userPass) {
